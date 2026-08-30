@@ -2,11 +2,15 @@
 # Naija Pidgin Banking Assistant (SLYVIA) — runtime dependencies for the
 # deployed Streamlit app (slyvia_app.py) only.
 #
-# Training/notebook dependencies (pandas, scikit-learn, matplotlib, etc.)
-# live in the main project's requirements_slyvia.txt instead — the deployed
-# app itself only imports streamlit, torch, and transformers.
+# scikit-learn is required even though slyvia_app.py never imports it
+# directly: label_encoder.pkl was pickled as an sklearn LabelEncoder
+# object, and unpickling it requires sklearn to be importable.
+#
+# Training/notebook-only dependencies (pandas, matplotlib, seaborn) live
+# in the main project's requirements_slyvia.txt instead.
 # =============================================================================
 
 torch==2.12.0
 transformers==5.9.0
 streamlit==1.51.0
+scikit-learn==1.7.2
