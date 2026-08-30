@@ -1,0 +1,24 @@
+# =============================================================================
+# Naija Pidgin Banking Assistant (SLYVIA) — Python package requirements
+# Install with:  pip install -r requirements.txt
+# =============================================================================
+
+# Deep learning framework (used to load/run the fine-tuned BERT model)
+torch==2.12.0
+
+# Hugging Face Transformers (BERT tokenizer + classifier)
+transformers==5.9.0
+
+# Data handling
+pandas==2.3.3
+numpy==2.3.5
+
+# Machine learning utilities (train/test split, evaluation metrics)
+scikit-learn==1.7.2
+
+# Charts (training curves, confusion matrix, evaluation bar chart)
+matplotlib==3.10.6
+seaborn==0.13.2
+
+# Web app interface
+streamlit==1.51.0

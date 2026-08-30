@@ -1,0 +1,191 @@
+{
+  "test_samples": 81,
+  "accuracy": 0.8024691358024691,
+  "precision_macro": 0.819268077601411,
+  "recall_macro": 0.802469135802469,
+  "f1_macro": 0.7980534361384185,
+  "precision_weighted": 0.8192680776014108,
+  "recall_weighted": 0.8024691358024691,
+  "f1_weighted": 0.7980534361384183,
+  "confusion_matrix": [
+    [
+      5,
+      0,
+      0,
+      0,
+      3,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      6,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      9,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9
+    ]
+  ],
+  "classification_report": {
+    "account_opening": {
+      "precision": 1.0,
+      "recall": 0.5555555555555556,
+      "f1-score": 0.7142857142857143,
+      "support": 9.0
+    },
+    "atm_issue": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 9.0
+    },
+    "balance_inquiry": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1-score": 0.9473684210526315,
+      "support": 9.0
+    },
+    "card_issue": {
+      "precision": 0.75,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7058823529411765,
+      "support": 9.0
+    },
+    "failed_transfer": {
+      "precision": 0.625,
+      "recall": 0.5555555555555556,
+      "f1-score": 0.5882352941176471,
+      "support": 9.0
+    },
+    "fraud_report": {
+      "precision": 0.6428571428571429,
+      "recall": 1.0,
+      "f1-score": 0.782608695652174,
+      "support": 9.0
+    },
+    "loan_request": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9411764705882353,
+      "support": 9.0
+    },
+    "mobile_app_issue": {
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.8888888888888888,
+      "support": 9.0
+    },
+    "out_of_scope": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1-score": 0.9473684210526315,
+      "support": 9.0
+    },
+    "accuracy": 0.8024691358024691,
+    "macro avg": {
+      "precision": 0.819268077601411,
+      "recall": 0.802469135802469,
+      "f1-score": 0.7980534361384185,
+      "support": 81.0
+    },
+    "weighted avg": {
+      "precision": 0.8192680776014108,
+      "recall": 0.8024691358024691,
+      "f1-score": 0.7980534361384183,
+      "support": 81.0
+    }
+  },
+  "class_names": [
+    "account_opening",
+    "atm_issue",
+    "balance_inquiry",
+    "card_issue",
+    "failed_transfer",
+    "fraud_report",
+    "loan_request",
+    "mobile_app_issue",
+    "out_of_scope"
+  ]
+}

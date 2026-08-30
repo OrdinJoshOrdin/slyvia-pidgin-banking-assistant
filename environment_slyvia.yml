@@ -1,0 +1,29 @@
+# =============================================================================
+# Naija Pidgin Banking Assistant (SLYVIA) — Conda environment reference
+#
+# This file is a record of the exact environment the project was built and
+# tested with. The setup scripts (client_setup.sh / client_setup_windows.bat)
+# install everything via requirements.txt into your EXISTING Anaconda
+# "base" / Python 3 environment — you do NOT need to create a new
+# environment from this file.
+#
+# (Optional, advanced) To create a brand-new environment from this file:
+#   conda env create -f environment.yml
+# =============================================================================
+name: base
+channels:
+  - defaults
+dependencies:
+  - python=3.13.9
+  - numpy=2.3.5
+  - pandas=2.3.3
+  - scikit-learn=1.7.2
+  - matplotlib=3.10.6
+  - seaborn=0.13.2
+  - streamlit=1.51.0
+  - pip
+  - pip:
+      - torch==2.12.0
+      - transformers==5.9.0
+      - tokenizers==0.22.2
+      - safetensors==0.7.0

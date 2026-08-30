@@ -1,0 +1,19 @@
+{
+  "model_name": "bert-base-uncased",
+  "max_length": 64,
+  "num_labels": 9,
+  "class_names": [
+    "account_opening",
+    "atm_issue",
+    "balance_inquiry",
+    "card_issue",
+    "failed_transfer",
+    "fraud_report",
+    "loan_request",
+    "mobile_app_issue",
+    "out_of_scope"
+  ],
+  "train_samples": 7650,
+  "val_samples": 1350,
+  "num_epochs": 4
+}
