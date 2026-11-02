@@ -9,7 +9,13 @@
 # Training/notebook-only dependencies (pandas, matplotlib, seaborn) live
 # in the main project's requirements_slyvia.txt instead.
 # =============================================================================
+#
+# CPU-only torch index: the default PyPI torch wheel bundles CUDA and is
+# 1-2GB, which blows past Streamlit Community Cloud's free-tier build/RAM
+# limits. The index below resolves torch to its much smaller CPU-only build.
+# =============================================================================
 
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.12.0
 transformers==5.9.0
 streamlit==1.51.0
